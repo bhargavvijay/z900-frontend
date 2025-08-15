@@ -110,6 +110,7 @@ export default function AccessoriesManager() {
   function startEdit(it) {
     setEditingId(it.id);
     setForm({ name: it.name ?? "", price: String(it.price ?? ""), link: it.link ?? "" });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   // ---- Delete
